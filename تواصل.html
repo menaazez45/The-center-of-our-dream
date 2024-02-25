@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ارسال عبر واتساب</title>
+<style>
+    /* CSS لوسط النموذج */
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    body {
+        width: 300px;
+        height: 1000px;
+        background-image: url(' صورة واتساب بتاريخ 2024-02-25 في 17.57.52_55926c17.jpg ');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        /* إذا كنت تريد تعيين الصورة كخلفية للصفحة بأكملها */
+        
+            text-align: center;
+        
+        /* يمكنك أيضًا تعيين الصورة كخلفية لعنصر معين بدلاً من الصفحة */
+    }
+ 
+</style>
+</head>
+<body>
+
+<div class="center">
+    <form action="https://api.whatsapp.com/send" method="GET">
+        <input type="hidden" name="phone" value="2001125885167">
+        <br><br>
+        <textarea name="message" placeholder="رسالتك" required></textarea>
+        <br><br>
+        <button type="submit">ارسال عبر واتساب</button>
+    </form>
+</div>
+
+</body>
+</html>
