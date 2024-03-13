@@ -1,18 +1,3 @@
-<?php
-
-  session_start();
-$token = bin2hex(random_bytes(32));
-$_SESSION['csrf_token'] = $token;
-echo '<input type="hidden" name="csrf_token" value="' . $token . '">';
-
-
-
-
-
-
-
-
-?>
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -21,8 +6,6 @@ echo '<input type="hidden" name="csrf_token" value="' . $token . '">';
     <title>اخصائي نفسي اكلينيكي</title>
     <meta name="google-site-verification" content="6A3cap4a08e9cXS333kd-Ydj5UpLrNLwJE7h_XXOIjw" />
     <meta name="descripe" content=" رنيا اخصائي نفسي اكلينيكي , مركز حلمنا, اخصائي نفسي اكلينيكي">
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-
     <style>
         body {
             width: 300px;
